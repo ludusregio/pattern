@@ -1,3 +1,4 @@
+import uuid
 import os
 
 creatures = [
@@ -19,7 +20,7 @@ creatures = [
         "Flamingo"
         ]
 
-filename = "./natural_world.txt"
+filename = str(uuid.uuid4().hex)
 
 with open(filename, "w") as f:
     f.writelines([f'{creature}\n' for creature in creatures])
@@ -33,7 +34,5 @@ with open(filename, "w") as f:
 
 
 
-
-
-# You should not modify the code below this line
+# Do not remove below code
 os.remove(filename)
