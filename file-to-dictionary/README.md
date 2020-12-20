@@ -1,7 +1,7 @@
 # Dictionary Prowess
 
 ## Objective
-Given a file, convert it to a dictionary where the line is the key is the line number and the value is the content
+Given a file, convert it to a dictionary where the line is the key and the value is the content
 
 ### Steps
 1. Open a file for read
